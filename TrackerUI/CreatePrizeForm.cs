@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrackerLibrary;
+using TrackerLibrary.DataAccess;
 
 namespace TrackerUI
 {
@@ -32,6 +33,10 @@ namespace TrackerUI
                 {
                     db.CreatePrize(model);
                 }
+                placeNameValue.Text = "";
+                placeNumberValue.Text = "";
+                prizeAmountValue.Text = "0";
+                prizePercentageValue.Text = "0";
             }
             else
             {
