@@ -162,10 +162,7 @@ namespace TrackerUI
             tm.EnteredTeams = selectedTeams;
 
             // TODO - Wire up the matchups
-            // Order our list randomly - no bias who matches up against whom
-            // Check if it's big enough - if not, add in byes
-            // Create our first round of matchups
-            // Create every round after that
+            TournamentLogic.CreateRounds(tm);
 
             // Create Tournament entry 
             // Create all of the team entries
